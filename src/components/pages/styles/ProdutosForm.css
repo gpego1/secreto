@@ -1,0 +1,63 @@
+.produtos-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.produtos-form h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.produtos-form input,
+.produtos-form textarea,
+.produtos-form select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.produtos-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cancel-button {
+    padding: 0.5rem 1rem;
+    background: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button {
+    padding: 0.5rem 1rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
