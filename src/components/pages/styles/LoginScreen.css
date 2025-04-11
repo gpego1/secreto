@@ -1,0 +1,131 @@
+.login-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(darkred);
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.login-content h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #6e8efb;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(110, 142, 251, 0.2);
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+.login-button {
+    background-color: #6e8efb;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+.login-button:hover {
+    background-color: #5a7df4;
+    transform: translateY(-2px);
+}
+
+.login-button:active {
+    transform: translateY(0);
+}
+
+/* Efeitos de animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .login-content {
+        padding: 30px 20px;
+    }
+
+    .login-content h1 {
+        font-size: 24px;
+    }
+}
+
+/* Adicionando estilo para o campo de telefone */
+input[type="tel"] {
+    letter-spacing: 1px;
+}
+
+/* Opcional: estilo para links adicionais */
+.login-links {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-links a {
+    color: #6e8efb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.login-links a:hover {
+    color: #5a7df4;
+    text-decoration: underline;
+}
